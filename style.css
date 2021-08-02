@@ -1,0 +1,826 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body {
+	background:#FFFFFA;
+	font-family: 'ABeeZee', sans-serif;
+}
+/*-----------Header----------------*/
+header {
+	width:100%;
+	height: 40px;
+
+}
+
+header .logo {
+	float: left;
+	background:#0D0D0D;
+	margin: 20px auto;
+    width: 10%;
+	height: 10%;
+	padding-left: 10px;
+	
+}
+
+header nav {
+	width:100%;
+	height: auto;
+	max-width:1400px;
+	background:#0D0D0D;
+	
+}
+.center h1 {
+	color:#fff;
+	font-family: 'ABeeZee', sans-serif;
+	text-align:center;
+	padding:10px;
+	
+}
+header nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+
+header nav ul li {
+	float:right;
+	
+}
+header nav ul li a {
+	color:#fff;
+	padding:15px;
+	display:block;
+	text-decoration:none;
+	font-family: 'ABeeZee', sans-serif;
+}
+
+
+header nav ul li a:hover {
+	background:#4a4a4a;
+}
+
+/*------------Slider----------------*/
+.container{
+	margin: 0;
+    padding: 0;
+}
+
+.slider {
+	
+    width: 300%;
+    height: auto;
+	display: flex;
+    animation: cambio 5s infinite alternate linear;
+
+}
+
+.slider li  ul{
+    list-style: none;
+    display: flex;
+	transition: opacity .5s;
+
+}
+
+
+.slider img {
+    width: 100%;
+    height: 600px;
+	
+}
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    30%{margin-left: 0;}
+ 
+    35%{margin-left: -100%;}
+    65%{margin-left: -100%;}
+
+    70%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+        
+  }
+  /*----------seccion 1- article----------------*/
+section .container_articulo{
+	  width: 100%;
+	  height: 400px;
+	  max-width: auto;
+	  margin: auto;
+	  background-color: #FFFFFA;
+	  padding: 70px;
+	  margin-top: 10px;
+	  font-family: 'ABeeZee', sans-serif;
+  }
+    
+  .title{
+	  font-size: 30px;
+	  font-family: 'ABeeZee', sans-serif;
+	  margin-bottom: 10px;
+	  margin-top: 10px;
+	  font-weight: 300;
+	  float: right;
+	  padding-right: 400px
+
+  }
+ .container_articulo img{
+	  width: 300px;
+	  float: left;
+	  margin-left: 40px;
+	  margin-right: 10px;
+	  margin-top: 50px;
+	  
+	  
+  }
+ 
+  .container_articulo p{
+	  font-size: 20px;
+	  font-weight: 400;
+	  line-height: 30px;
+	  width: 800px;
+	  height: 600px;
+	  float: right;
+	  margin-right: 10px;
+	  margin-top: 20px;
+	  margin-bottom: 10px;
+	  text-align: left;
+	 
+  }
+  
+  /*-----------------History logo Apple----------------*/
+
+  .container-cover2{
+	width: 100%;
+	margin-top: 80px;
+	padding: auto;
+	
+}
+.container2 {
+	margin-top: 700px;
+    width: 100%;
+	height: 400px;
+    position: relative;
+    display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+
+.container2 .card {
+    position: relative;
+	justify-content: center;
+
+}
+
+.container2 .card .face {
+	width: 300px;
+    height: 300px;
+    transition: 0.7s;
+}
+
+.container2 .card .face.face1 {
+    position: relative;
+    background: rgb(68, 68, 68);
+    display: flex;
+	flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container2 .card:hover .face.face1 {
+    background: white;
+    transform: translateY(0px);
+}
+
+.container2 .card .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50 rgba(128, 126, 126, 0.8);
+    transform: translateY(-100px);
+}
+
+.container2 .card:hover .face.face2 {
+    transform: translateY(0);
+}
+
+.container2 .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+}
+
+.container2 .card .face.face1 .content {
+    opacity: 0.2;
+    transition: 0.5s;
+}
+.container2 .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.container2 .card .face.face1 .content img {
+    max-width: 200px; 
+	display: flex;   
+}
+
+.container2 .card .face.face1 .content h3 {
+	margin: 10px 0 0;
+    padding: 0;
+    color: rgb(22, 21, 21);
+    text-align: center;
+    font-size: 1.5em; 
+}
+
+  /*-----------------Footer----------------*/
+
+#footer {
+	width: 100%;
+	height: 40px;
+	background: #333;
+	bottom: 0;
+    position: fixed;
+	display: block;
+	padding: 1em;
+  align-self: flex-end;
+	
+}
+
+#footer .copyright p{
+	color:#fff;
+	margin:0;
+	padding:5px 0;
+	text-align:center;
+}
+
+/*------------End Footer------------------*/
+/*=======================
+  TIME LIFE -page 2
+=========================*/
+/*------------cover---------*/
+.container-cover{
+	width: 100%;
+	margin-top: 80px;
+	padding: auto;
+}
+
+.efecto {
+	text-align: center;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	color:#fff;
+		font-family: 'Raleway', sans-serif;
+		text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+.efecto div {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 1em;
+	
+	margin-top: -5vh;
+	background-image: url(img/timelife/cover/ATA010819jobs_img01.jpg);
+	background-position: center 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	
+
+}
+
+.efecto h1{
+	font-size: 4.3em;
+	letter-spacing: 0.13em;
+	padding-bottom: 0.21em;
+	border-top: 3px solid white;
+	
+}
+.efecto h3 {
+		font-weight: 300;
+		font-size: 1.5em;
+		letter-spacing: 0.15em;
+	}
+.efecto h4 {
+	font-weight: 300;
+	font-size: 1.3em;
+	letter-spacing: 0.2em;
+	border-bottom: 3px solid white;
+}
+
+
+
+
+/*------------TIMELIFE-section--------*/
+section .timelife{
+	width: 100%;
+	height: 800px;
+	display: flex;
+	background-color: #5b627e;
+	margin-bottom: 20px;
+	margin-top: auto;
+	margin-right: 10px;
+	text-indent: 2px;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+
+}
+.timelife h3{
+	font-weight: 300;
+	font-size: 30px;
+	color: #fff;
+	padding-left: 90px;
+	border-bottom: 3px solid white;
+}
+.timelife ul li{
+	padding-left: 50px;
+	font-size: 15px;
+	color: #fff;
+	line-height: 30px;
+	display: block;
+	
+}
+
+/**************************************************************/
+/*-----------------galeria------------------------------------ */
+.container-gallery{
+	padding: 75px 0;
+	margin: 0 auto;
+	width: 100%;
+  }
+  
+.container-gallery h3{
+	position: relative;
+	margin-bottom: 45px;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #424242;
+	padding-right: 400px;
+  }
+  
+.gallery-wrap {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 80vh;
+}
+  
+.gallery-wrap .item {
+	
+	flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;	
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	transition: flex 0.6s ease;
+	
+  }
+
+  .item:hover{
+	  transition: flex 0.8s ease;
+	  flex:20;
+	  flex-wrap: wrap;
+	  width: 100%;
+	  height: 100%;
+  }
+ .item h4{
+    font-weight: 300;
+	font-size: 1.3em;
+	color: rgb(190, 190, 190);
+	letter-spacing: 0.2em;
+	border-bottom: 3px solid white;
+	align-content:center;
+ }
+
+  .item-1 { 
+	background-image: url(img/gallery/productos/appleII1977.jpg);
+  }
+  
+  .item-2 { 
+	background-image: url(img/gallery/productos/macintosh1984-sj.jpg);
+  }
+  
+  .item-3 { 
+	background-image: url(img/gallery/productos/imacg3blue.png);
+  }
+  
+  .item-4 { 
+	background-image: url(img/gallery/productos/imac.jpg);
+  }
+  
+  .item-5 { 
+	background-image: url(img/gallery/productos/ipod1.jpg);
+  }
+  
+  .item-6 { 
+	background-image: url(img/gallery/productos/Steve-Jobs-presentacion-ipad.jpg);
+  }
+  
+/*fin galeria*/
+
+/*-----------------------video*/
+section .video{
+	width: 100%;
+	margin-top:  50px;
+	margin-bottom: 20px;
+
+}
+.video {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #4a4a4a;
+	background-color: #4a4a4a;
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: end;
+}
+
+.video .contenedor-video {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+	padding-left: 10%;
+}
+
+.video .title h3{
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+
+/*video final-------------*/
+
+
+@media screen and (max-width:500px) and (min-width:200px) {
+	header nav {
+		width:80%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+	}
+    .container_articulo p{
+		max-height: 2000px;
+		max-width: 300px;
+		min-width: 90%;
+		font-size:	 14px;
+		font-weight: 200;
+		line-height: 20px;
+		width: 100%;
+		height: 100%;
+		display:block;
+		margin:auto;
+		margin-top: 05px;
+		margin-bottom: 05px;
+		text-align: left;
+		float: left;
+		padding-left: 0%;
+	   
+	}
+	.container_articulo img{
+		display:block;
+		margin:auto;
+		margin-top: 05px;
+		margin-bottom: 05px;
+		width: 300px;
+		float: center;
+		margin: auto;
+		max-height: 300px;
+		max-width: 300px;
+		padding-right: 20%;
+	}
+
+	.container2{
+		margin-top: 200%;
+		flex-wrap: wrap;
+		justify-content: center;
+
+	}
+
+	
+    .efecto div {
+		display: inline-block;
+		vertical-align: middle;
+		background-image: url(img/timelife/cover/ATA010819jobs_img01.jpg);
+		background-position: center 0;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		margin:auto;
+		margin-top: 05px;
+		margin-bottom: 05px;
+		width: 600px;
+		margin-bottom: 0px;
+		max-height: 500px;
+		max-width: 500px;
+		padding-left: 0%;
+		
+	
+	}
+
+	.title{
+		font-size: 14xp;
+		font-family: 'ABeeZee', sans-serif;
+		margin-bottom: 50px;
+		margin-top: 0px;
+		font-weight: 300;
+		float: center;
+		padding-right: 20%;
+  	}
+    .title h2{
+		font-size: 14xp;
+		font-family: 'ABeeZee', sans-serif;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		
+		
+  	}
+	.video.contenedor-video .title h3{
+		width:100%; 
+		max-height: 800px;
+		max-width: 400px;
+		font-weight: 300;
+		font-size: 14px;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	
+	.video .contenedor-video {
+		margin-bottom: 0;
+		padding-left: 0%;
+	}
+
+
+	.video {
+		width:100%; 
+		max-height: 800px;
+		max-width: 400px;
+		font-size: 14px;
+		color: #4a4a4a;
+		background-color: #4a4a4a;
+		background-position: center;
+		vertical-align: middle;
+		background-position: center 0;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		}
+
+	section .video{
+		width: 100%;
+		margin-top:  0px;
+		margin-bottom: 0px;
+	}	
+
+	iframe{
+		max-height: 300px;
+		max-width: 300px;
+		width:300px; 
+		height:300px; 
+	}
+
+
+
+
+	section .timelife{
+		width:100%; 
+		max-height: 800px;
+		max-width: 400px;
+		display: flex;
+		flex-wrap: wrap;
+		align-self: center;
+	
+		background-color: #5b627e;
+		margin-bottom: 0px;
+		margin-right: 0px;
+		text-indent: 2px;
+		height:90%; 
+		
+	
+	}
+	.timelife h3{
+		max-height: 800px;
+		max-width: 400px;
+		font-size: 14px;
+		color: #fff;
+		padding-left: 0px;
+		border-bottom: 3px solid white;
+	}
+	.timelife ul li{
+		width:100%;
+		max-height: 800px;
+		max-width: 400px;
+		padding-left: 10px;
+		font-size: 12px;
+		color: #fff;
+		line-height: 15px;
+	
+	}
+
+	#footer {
+		width:100%;
+		max-height: 40px;
+		max-width: 400px;
+
+	}
+}
+
+@media screen and (max-width:800px) and (min-width:500px){
+	
+		header nav {
+			width:50%;
+			height:auto;
+			left:-100%;
+			margin:0;
+			position: fixed;
+		}
+		
+		.container_articulo p{
+			max-height: 1000px;
+			max-width: 900px;
+			min-width: 90%;
+			font-size:	 20px;
+			font-weight: 200;
+			line-height: 20px;
+			width: 100%;
+			height: 100%;
+			display:block;
+			margin:auto;
+			margin-top: 05px;
+			margin-bottom: 05px;
+			text-align: left;
+			float: left;
+			padding-left: 0%;
+		   
+		}
+		.container_articulo img{
+			display:block;
+			margin:auto;
+			margin-top: 05px;
+			margin-bottom: 05px;
+			width: 100%;
+			float: center;
+			margin: auto;
+			max-height: 800px;
+			max-width: 800px;
+			padding-right: 5%;
+			padding-left: 5%;
+		}
+	
+		.container2{
+			margin-top: 100%;
+			flex-wrap: wrap;
+			justify-content:space-between;
+	
+		}
+	
+		
+		.efecto div {
+			display: inline-block;
+			vertical-align: middle;
+			background-image: url(img/timelife/cover/ATA010819jobs_img01.jpg);
+			background-position: center 0;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			margin:auto;
+			margin-top: 05px;
+			margin-bottom: 05px;
+			width: 100%;
+			margin-bottom: 0px;
+			max-height: 800px;
+			max-width: 800px;
+			padding-left: 0%;
+			
+		
+		}
+	
+		.title{
+			font-size: 20xp;
+			font-family: 'ABeeZee', sans-serif;
+			margin-bottom: 50px;
+			margin-top: 0px;
+			font-weight: 300;
+			float: center;
+			padding-right: 20%;
+		  }
+		.title h2{
+			font-size: 20xp;
+			font-family: 'ABeeZee', sans-serif;
+			margin-bottom: 0px;
+			margin-top: 0px;
+			
+			
+		  }
+		.video.contenedor-video .title h3{
+			width:100%; 
+			max-height: 700px;
+			max-width: 800px;
+			font-weight: 300;
+			font-size: 14px;
+			margin-bottom: 0px;
+			margin-top: 0px;
+		}
+		
+		.video .contenedor-video {
+			margin-bottom: 0;
+			padding-left: 0%;
+		}
+	
+	
+		.video {
+			width:100%; 
+			max-height: 800px;
+			max-width: 800px;
+			font-size: 14px;
+			color: #4a4a4a;
+			background-color: #4a4a4a;
+			background-position: center;
+			vertical-align: middle;
+			background-position: center 0;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			}
+	
+		section .video{
+			width: 100%;
+			margin-top:  0px;
+			margin-bottom: 0px;
+		}	
+	
+		iframe{
+			max-height: 800px;
+			max-width: 800px;
+			width:800px; 
+			height:700px; 
+		}
+	
+	
+	
+	
+		section .timelife{
+			width:100%; 
+			max-height: 600px;
+			max-width: 800px;
+			display: flex;
+			flex-wrap: wrap;
+			align-self: center;
+		
+			background-color: #5b627e;
+			margin-bottom: 0px;
+			margin-right: 0px;
+			text-indent: 2px;
+			height:90%; 
+			
+		
+		}
+		.timelife h3{
+			max-height: 600px;
+			max-width: 800px;
+			font-size: 14px;
+			color: #fff;
+			padding-left: 0px;
+			border-bottom: 3px solid white;
+		}
+		.timelife ul li{
+			width:100%;
+			max-height: 700px;
+			max-width: 800px;
+			padding-left: 10px;
+			font-size: 12px;
+			color: #fff;
+			line-height: 15px;
+		
+		}
+	
+		#footer {
+			width:100%;
+			max-height: 40px;
+			max-width: 800px;
+	
+		}
+		
+	
+	}
+
+	
+
+
+
+
