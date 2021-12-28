@@ -8,6 +8,8 @@
     <meta charset="UTF-8">
     <title>Tributo</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 
@@ -16,70 +18,113 @@
 <body>
     <!---**********Menu------------------------------->
     <header>
-        <nav>
-            <div class="logo">
-                <img src="img/logo/logo.png" width="100" height="50">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo/logo.png" alt="apple" width="40" height="34"
+                        class="d-inline-block align-text-center">
+                    Tributo a Steve Jobs
+                </a>
             </div>
-            <div class="center">
-                <h1>Tributo a Steve Jobs</h1>
-            </div>
-            <div>
-                <ul>
-                
-                    <li><a href="Gallery.html">Galeria</a></li>
-                    <li><a href="Timelife.html">Timelife</a></li>
-                    <li><a href="Legado.html">legado</a></li>
-                    <li><a href="Index.html">Home</a></li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Timelife.html">Timelife</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Legado.html">Legado</a>
+                    </li>
                 </ul>
             </div>
         </nav>
 
     </header>
+
+
     <!--------**************slider--------->
-    <div class="container" >
-        <ul class="slider">
-            <li id="im01"></li>
-            <img src="img/slider/1.jpg" alt="quote-Steve Jobs"> 
-            <li id="im02"></li>
-            <img src="img/slider/2.jpg" alt="Steve Jobs innovación">
-            <li id="im03"></li>
-            <img src="img/slider/3.jpg" alt="Steve Jobs Piensa  Diferente">
-        </ul>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slider/1.jpg" class="d-block w-100" alt="quote-Steve Jobs">
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider/2.jpg" class="d-block w-100" alt="Steve Jobs innovación">
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider/3.jpg" class="d-block w-100" alt="Steve Jobs Piensa  Diferente">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-     <!----section Biography--------------> 
-     <section>
-     <div class="container_articulo">
-        <article >
-             <h2 class="title">Biografía</h2>
+
+    <!----section Biography-------------->
+    <section>
+        <div class="container_articulo">
+            <article>
+                <h2 class="title">Biografía</h2>
                 <img src="img/article/1/applecomputer.png" alt="steve jobs">
-             <p>
-                Steven Paul Jobs nació el 24 de febrero de 1955 en San Francisco, California. Cuando apenas tenía 13 años conoció a la persona que marcaría su vida, 
-                Stephen Wozniak, otro apasionado de la electrónica.  Padre del primer ordenador personal y fundador de Apple Computer, probablemente la empresa más 
-                innovadora del sector.<br>
-                En 1976 diseñó un ordenador, junto con Steve Wozniak, al que llamaron Apple. Entonces fundaron la compañía Apple Computer para empezar a comercializar 
-                el ordenador, aunque esa primera versión no triunfó demasiado. No obstante, Jobs y Wozniak siguieron trabajando hasta conseguir el Apple II, un ordenador 
-                mucho más llamativo que además incluía gráficos en color.<br>
-                 Sus ideas visionarias en el campo de los ordenadores personales, la música digital o la telefonía móvil revolucionaron los mercados y los hábitos de 
-                 millones de personas.El 5 de octubre de 2011, a los 56 años de edad, falleció en su casa de Palo Alto, víctima del avance del cáncer que le había sido 
-                 detectado en 2003.<br>
-                 Steve Jobs es un caso de estudio en las escuelas, porque revolucionó no solo las ventas, la forma de dirigirse a los clientes. 
-                Significó un liderazgo distinto, alguien que no llevaba corbata, que jugaba en las presentaciones, generando la mayor expectación, 
-                que se volvió un ídolo para muchos, alguien capaz de reinventarse constantemente.
-             </p>
-     </div>
-         </article>
-        </section>
-           
-                 <div class="history-logo">
-                      
-                 </div>
-             </section>
-               <!-- Copyright -->
-                <footer id="footer">
-                                <div class="copyright">
-                                    <p>&copy; Copyright 2021 Katherine Bonilla</p>
-                                </div>
-             </footer>  
-    
+                <p>
+                    Steven Paul Jobs nació el 24 de febrero de 1955 en San Francisco, California. Cuando apenas tenía 13
+                    años conoció a la persona que marcaría su vida,
+                    Stephen Wozniak, otro apasionado de la electrónica. Padre del primer ordenador personal y fundador
+                    de Apple Computer, probablemente la empresa más
+                    innovadora del sector.<br>
+                    En 1976 diseñó un ordenador, junto con Steve Wozniak, al que llamaron Apple. Entonces fundaron la
+                    compañía Apple Computer para empezar a comercializar
+                    el ordenador, aunque esa primera versión no triunfó demasiado. No obstante, Jobs y Wozniak siguieron
+                    trabajando hasta conseguir el Apple II, un ordenador
+                    mucho más llamativo que además incluía gráficos en color.<br>
+                    Sus ideas visionarias en el campo de los ordenadores personales, la música digital o la telefonía
+                    móvil revolucionaron los mercados y los hábitos de
+                    millones de personas.El 5 de octubre de 2011, a los 56 años de edad, falleció en su casa de Palo
+                    Alto, víctima del avance del cáncer que le había sido
+                    detectado en 2003.<br>
+                    Steve Jobs es un caso de estudio en las escuelas, porque revolucionó no solo las ventas, la forma de
+                    dirigirse a los clientes.
+                    Significó un liderazgo distinto, alguien que no llevaba corbata, que jugaba en las presentaciones,
+                    generando la mayor expectación,
+                    que se volvió un ídolo para muchos, alguien capaz de reinventarse constantemente.
+                </p>
+        </div>
+        </article>
+    </section>
+
+    <div class="history-logo">
+
+    </div>
+    </section>
+    <!-- Copyright -->
+    <footer id="footer">
+        <div class="copyright">
+            <p>&copy; Copyright 2021 Katherine Bonilla</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

@@ -8,98 +8,18 @@ body {
 	font-family: 'ABeeZee', sans-serif;
 }
 /*-----------Header----------------*/
-header {
-	width:100%;
-	height: 40px;
 
-}
-
-header .logo {
-	float: left;
-	background:#0D0D0D;
-	margin: 20px auto;
-    width: 10%;
-	height: 10%;
-	padding-left: 10px;
-	
-}
-
-header nav {
-	width:100%;
-	height: auto;
-	max-width:1400px;
-	background:#0D0D0D;
-	
-}
-.center h1 {
+ h1 {
 	color:#fff;
 	font-family: 'ABeeZee', sans-serif;
-	text-align:center;
-	padding:10px;
-	
-}
-header nav ul {
-	overflow:hidden;
-	list-style:none;
-}
-
-header nav ul li {
-	float:right;
-	
-}
-header nav ul li a {
-	color:#fff;
-	padding:15px;
-	display:block;
-	text-decoration:none;
-	font-family: 'ABeeZee', sans-serif;
-}
-
-
-header nav ul li a:hover {
-	background:#4a4a4a;
-}
-
-/*------------Slider----------------*/
-.container{
-	margin: 0;
-    padding: 0;
-}
-
-.slider {
-	
-    width: 300%;
-    height: auto;
 	display: flex;
-    animation: cambio 5s infinite alternate linear;
-
-}
-
-.slider li  ul{
-    list-style: none;
-    display: flex;
-	transition: opacity .5s;
-
-}
-
-
-.slider img {
-    width: 100%;
-    height: 600px;
-	
-}
-
-@keyframes cambio {
-    0%{margin-left: 0;}
-    30%{margin-left: 0;}
+     align-items: center;
+    justify-content: center;
+	padding-left: 30px;
  
-    35%{margin-left: -100%;}
-    65%{margin-left: -100%;}
+}
 
-    70%{margin-left: -200%;}
-    100%{margin-left: -200%;}
-        
-  }
+
   /*----------seccion 1- article----------------*/
 section .container_articulo{
 	  width: 100%;
@@ -187,6 +107,7 @@ section .container_articulo{
     align-items: center;
     z-index: 1;
     transform: translateY(100px);
+	
 }
 
 .container2 .card:hover .face.face1 {
@@ -231,7 +152,7 @@ section .container_articulo{
 .container2 .card .face.face1 .content h3 {
 	margin: 10px 0 0;
     padding: 0;
-    color: rgb(22, 21, 21);
+    color: rgba(128, 126, 126, 0.8);
     text-align: center;
     font-size: 1.5em; 
 }
@@ -240,13 +161,13 @@ section .container_articulo{
 
 #footer {
 	width: 100%;
-	height: 40px;
+	height: 80px;
 	background: #333;
 	bottom: 0;
     position: fixed;
 	display: block;
 	padding: 1em;
-  align-self: flex-end;
+   align-self: flex-end;
 	
 }
 
@@ -302,18 +223,21 @@ section .container_articulo{
 	letter-spacing: 0.13em;
 	padding-bottom: 0.21em;
 	border-top: 3px solid white;
+	color: white; text-shadow: black 0.1em 0.1em 0.2em;
 	
 }
 .efecto h3 {
 		font-weight: 300;
 		font-size: 1.5em;
 		letter-spacing: 0.15em;
+		color: white; text-shadow: black 0.1em 0.1em 0.2em;
 	}
 .efecto h4 {
 	font-weight: 300;
 	font-size: 1.3em;
 	letter-spacing: 0.2em;
 	border-bottom: 3px solid white;
+	color: white; text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 
@@ -324,7 +248,7 @@ section .timelife{
 	width: 100%;
 	height: 800px;
 	display: flex;
-	background-color: #5b627e;
+	background-color:#fcba03;
 	margin-bottom: 20px;
 	margin-top: auto;
 	margin-right: 10px;
@@ -337,7 +261,7 @@ section .timelife{
 .timelife h3{
 	font-weight: 300;
 	font-size: 30px;
-	color: #fff;
+	color: rgb(238, 238, 240);
 	padding-left: 90px;
 	border-bottom: 3px solid white;
 }
@@ -363,7 +287,7 @@ section .timelife{
 	margin-bottom: 45px;
 	font-size: 30px;
 	text-transform: uppercase;
-	color: #424242;
+	color: #916969;
 	padding-right: 400px;
   }
   
@@ -399,7 +323,8 @@ section .timelife{
  .item h4{
     font-weight: 300;
 	font-size: 1.3em;
-	color: rgb(190, 190, 190);
+	color:rgb(68, 68, 68);
+	text-shadow: 1px 1px white, -1px -1px #f3b46d;
 	letter-spacing: 0.2em;
 	border-bottom: 3px solid white;
 	align-content:center;
@@ -407,6 +332,7 @@ section .timelife{
 
   .item-1 { 
 	background-image: url(img/gallery/productos/appleII1977.jpg);
+	
   }
   
   .item-2 { 
@@ -467,13 +393,7 @@ section .video{
 
 
 @media screen and (max-width:500px) and (min-width:200px) {
-	header nav {
-		width:80%;
-		height:100%;
-		left:-100%;
-		margin:0;
-		position: fixed;
-	}
+	
     .container_articulo p{
 		max-height: 2000px;
 		max-width: 300px;
@@ -634,6 +554,7 @@ section .video{
 
 	#footer {
 		width:100%;
+		height: 100px;
 		max-height: 40px;
 		max-width: 400px;
 
@@ -642,13 +563,7 @@ section .video{
 
 @media screen and (max-width:800px) and (min-width:500px){
 	
-		header nav {
-			width:50%;
-			height:auto;
-			left:-100%;
-			margin:0;
-			position: fixed;
-		}
+	
 		
 		.container_articulo p{
 			max-height: 1000px;
@@ -809,12 +724,7 @@ section .video{
 		
 		}
 	
-		#footer {
-			width:100%;
-			max-height: 40px;
-			max-width: 800px;
 	
-		}
 		
 	
 	}
