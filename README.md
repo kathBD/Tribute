@@ -1,7 +1,7 @@
 # Tribute 
 Comenzando 🚀
 Página tributo a Steve Jobs realizado en HTML - CSS 
-![retos](https://i.ibb.co/wKZ2xH4/retos.png)
+![tributo](https://i.ibb.co/pb3dhT8/tribute.png)
 <ul>
 <li>Proyecto en HTML5 y CSS3 </li>
 Mira Deployment de la página proyecto.</ul>
